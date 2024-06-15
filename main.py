@@ -4,6 +4,10 @@ print("Welcome to the tip calculator!")
 bill = input("What was the total bill? $")
 bill_as_float = float(bill)
 
+# Ask about the percentage of the tip and convert it to int
+bill_tip = input("How much tip would you like to give? e.g. 10, 12, or 15? %")
+bill_tip_as_int = int(bill_tip)
+
 #If the bill was $150.00, split between 5 people, with 12% tip.
 
 #Each person should pay (150.00 / 5) * 1.12 = 33.6
