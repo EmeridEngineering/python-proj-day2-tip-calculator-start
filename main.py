@@ -12,11 +12,17 @@ bill_tip_as_int = int(bill_tip)
 number_of_people = input("How many people to split the bill? ")
 number_of_people_as_int = int(number_of_people)
 
-#If the bill was $150.00, split between 5 people, with 12% tip.
+## Calculate the total bill with tip
+#If the bill was $150.00 add 12% tip and split for 5 people.
+#Each person should pay 150.00 * 1.12 / 5 = 33.6
+bill_per_person = bill_as_float * (
+    1 + bill_tip_as_int / 100) / number_of_people_as_int
 
-#Each person should pay (150.00 / 5) * 1.12 = 33.6
 #Format the result to 2 decimal places = 33.60
+bill_per_person_rounded = "{:.2f}".format(bill_per_person)
 
+#Print the result
+print(f"Each person should pay: ${bill_per_person_rounded}")
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 #Write your code below this line 👇
