@@ -20,6 +20,9 @@ bill_per_person = bill_as_float * (
 
 #Format the result to 2 decimal places = 33.60
 
+#Print the result
+print(f"Each person should pay: ${bill_per_person:.2f}")
+
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 #Write your code below this line 👇
