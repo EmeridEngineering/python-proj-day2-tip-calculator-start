@@ -22,7 +22,7 @@ bill_per_person = bill_as_float * (
 bill_per_person_rounded = "{:.2f}".format(bill_per_person)
 
 #Print the result
-print("Each person should pay: $" + bill_per_person_rounded)
+print(f"Each person should pay: ${bill_per_person_rounded}")
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 #Write your code below this line 👇
